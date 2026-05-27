@@ -1,0 +1,48 @@
+{
+  "signaling_server": {
+    "host": "localhost",
+    "port": 8888,
+    "protocol": "udp"
+  },
+  "stun_server": {
+    "host": "stun.l.google.com",
+    "port": 19302
+  },
+  "turn_server": {
+    "host": "localhost",
+    "port": 3478,
+    "username": "atflux",
+    "password": "atflux123"
+  },
+  "network": {
+    "local_port": 9999,
+    "max_packet_size": 65535,
+    "connection_timeout": 30,
+    "retry_interval": 2000
+  },
+  "encryption": {
+    "rsa_key_size": 2048,
+    "aes_key_size": 256,
+    "iv_size": 16
+  },
+  "file_share": {
+    "default_root": "./shared",
+    "max_file_size": 1073741824,
+    "buffer_size": 65536
+  },
+  "remote_desktop": {
+    "screen_capture_interval": 100,
+    "max_frame_size": 1048576,
+    "compression_level": 9
+  },
+  "whitelist": {
+    "enable_local": true,
+    "enable_server": true,
+    "local_path": "./config/whitelist.json"
+  },
+  "logging": {
+    "level": "DEBUG",
+    "file": "./logs/atflux.log",
+    "max_size": 10485760
+  }
+}
